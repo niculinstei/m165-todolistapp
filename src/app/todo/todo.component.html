@@ -1,14 +1,14 @@
 <div class="card shadow-lg mt-5">
   <div class="card-header text-center py-4 border-0">
-    <h1 class="display-6 fw-bold">To Do List</h1>
+    <h1 class="display-6 fw-bold">To-Do-List</h1>
   </div>
   <div class="card-body p-4">
     <ul class="list-group">
       <li class="list-group-item mb-2 border py-0 rounded-3">
         <div class="input-group">
-          <input type="text" class="form-control border-0 py-3 shadow-none" placeholder="Title goes here"
+          <input type="text" class="form-control border-0 py-3 shadow-none" placeholder="Title of note"
                  #titleInput>
-          <button class="btn text-success border-0" (click)="onClick(titleInput)">
+          <button class="btn text-success border-0 float-end" (click)="onClick(titleInput)">
             <i class="fa-solid fa-circle-plus fa-xl"></i>
           </button>
         </div>
@@ -21,7 +21,7 @@
                   {{item.title}}
                   <span class="float-end text-secondary"
                         (click)="onDelete(item.id)">
-                        <i class="fa-solid fa-trash-can"></i>
+                        <i class="fa-solid text-danger fa-trash-can fa-xl"></i>
                     </span>
                 </span>
 

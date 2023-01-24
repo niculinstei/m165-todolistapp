@@ -36,7 +36,6 @@ export class TodoComponent implements OnInit {
 
   onTitleChange(id: string, newTitle: string) {
     this.todoService.updateTodoTitle(id, newTitle);
-    alert("Title successfully changed");
   }
 
   onDelete(id:string){

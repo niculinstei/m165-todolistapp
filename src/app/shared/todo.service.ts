@@ -24,6 +24,7 @@ export class TodoService {
 
   updateTodoTitle(id:string, newTitle:string){
     this.firestoreCollection.doc(id).update({title:newTitle});
+    alert("Title successfully changed");
   }
 
    deleteTodo(id:string){
